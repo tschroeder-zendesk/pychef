@@ -1,10 +1,16 @@
 import six
 import sys
+import os
+import re
 from ctypes import *
 from ctypes.util import find_library
 
+
 if sys.platform == 'win32' or sys.platform == 'cygwin':
     _eay = CDLL('libeay32.dll')
+elif sys.platform == 'darwin':
+    # on osx 10.15 a version must be specified to use libcrypto
+    _eay = CDLL('/usr/local/opt/openssl/lib/libcrypto.dylib')
 else:
     _eay = CDLL(find_library('crypto'))
 

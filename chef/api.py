@@ -188,7 +188,8 @@ class ChefAPI(object):
         del api_stack_value()[-1]
 
     def _request(self, method, url, data, headers):
-        return requests.api.request(method, url, headers=headers, data=data, verify=self.ssl_verify)
+        print(headers, method, url, data)
+        return requests.api.request(method, url, headers=headers, data=data, verify=False)
 
     def request(self, method, path, headers={}, data=None):
         auth_headers = sign_request(key=self.key, http_method=method,
