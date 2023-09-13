@@ -12,6 +12,7 @@ setup(
     author_email = 'noah@coderanger.net',
     description = 'Python implementation of a Chef API client.',
     long_description = open(os.path.join(os.path.dirname(__file__), 'README.md')).read(),
+    long_description_content_type='text/markdown',
     license = 'Apache 2.0',
     keywords = '',
     url = 'http://github.com/elvinup/pychef',

@@ -1,21 +1,14 @@
-PyChef
-======
+# PyChef
 
 A Python API for interacting with a Chef server.
 
-Installation
--------
+## Installation
+```
+pip3 install --user pythonchef
+```
 
-::
-
-    pip3 install --user pythonchef
-
-
-Example
--------
-
-::
-
+## Example
+```
     from chef import autoconfigure, Node
 
     api = autoconfigure()
@@ -23,8 +16,8 @@ Example
     print n['fqdn']
     n['myapp']['version'] = '1.0'
     n.save()
+```
 
-Further Reading
----------------
+## Further Reading
 
 For more information check out http://pychef.readthedocs.org/en/latest/index.html
