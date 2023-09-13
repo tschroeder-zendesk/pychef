@@ -18,6 +18,7 @@ from chef.rsa import Key
 from chef.utils import json
 from chef.utils.file import walk_backwards
 
+requests.packages.urllib3.disable_warnings()
 api_stack = threading.local()
 log = logging.getLogger('chef.api')
 

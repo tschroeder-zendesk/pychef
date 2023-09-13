@@ -5,8 +5,8 @@ import os
 from setuptools import setup, find_packages
 
 setup(
-    name = 'PyChef',
-    version = '0.3.1',
+    name = 'PythonChef',
+    version = '0.4.0',
     packages = find_packages(),
     author = 'Noah Kantrowitz',
     author_email = 'noah@coderanger.net',
@@ -14,7 +14,7 @@ setup(
     long_description = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
     license = 'Apache 2.0',
     keywords = '',
-    url = 'http://github.com/coderanger/pychef',
+    url = 'http://github.com/elvinup/pychef',
     classifiers = [
         #'Development Status :: 1 - Planning',
         #'Development Status :: 2 - Pre-Alpha',
